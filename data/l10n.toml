@@ -1,22 +1,3 @@
-[author]
-    by = "by"
-
-[article]
-    read_more = "Read more"
-    back_to_home = "Back to home"
-    posted_on = "Posted on"
-    tagged_in = "Tagged in"
-
-[comments]
-    comments = "Comments"
-
-[pagination]
-    newer = "Newer"
-    older = "Older"
-    # Page x of y
-    page = "Page"
-    of = "of"
-
 [page_not_found]
     title = "The page cannot be found"
     subtitle = "The content you're looking for doesn't seem to exist."
