@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Marisa Wadsworth</title>
-  <link rel="stylesheet" href="/static/css/styles.css">
+  <title>{{.Title}} : {{.Site.BaseURL}}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="/css/styles.css">
 
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -19,56 +19,11 @@
 </head>
 
 <body>
+<header>
+  <div class = "header-logo">
+    <img src="/img/logo.png" alt="logo" class="center">
+    <nav class = "header-menu">{{ partial "nav" . }}</nav>
+  </div>
+</header>
 
-    <div class = "header-logo">
-        <img src="/static/img/logo.png" alt="logo" class="center">
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/layouts/index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/layouts/aboutme.html">About Me</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdowncourse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Course
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/layouts/course/5209.html">5209</a>
-                        <a class="dropdown-item" href="/layouts/course/5210.html">5210</a>
-                        <a class="dropdown-item" href="/layouts/course/5211.html">5211</a>
-                        <a class="dropdown-item" href="/layouts/course/6209.html">6209</a>
-                        <a class="dropdown-item" href="/layouts/course/6210.html">6210</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdowncontent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Content
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="content/links.html">Links</a>
-                        <a class="dropdown-item" href="content/policy.html">Policy</a>
-                    <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="content/toiohomai.html">Toi Ohomai</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdowncontact" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Contact
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../contact/contactform.html">Contact Form</a>
-                        <a class="dropdown-item" href="contact/socialmedia.html">Social Media</a>
-                </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
+</body>
