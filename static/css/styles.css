@@ -17,6 +17,10 @@ body{
     height: 70px;
 }
 
+.header-menu {
+    border: black 2px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
