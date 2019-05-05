@@ -1,0 +1,13 @@
+<div class="col-12 pb-4">
+    <h1>My Static Title</h1>
+
+    <header class="site-header">
+      <div class="transparent-layer">
+          <h2>
+            {{ with .Site.GetPage "/post" }}
+            {{ .Title }}
+            {{end}}
+          </h2>
+      </div>
+    </header>
+</div>
